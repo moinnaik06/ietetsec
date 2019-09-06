@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		faqs
+	</title>
+</head>
+<body><br><br><br><br>
+	
+	<div class="containe">
+		<img src="sblo.jpg">
+		 <div class="center"><font face = "Comic sans MS"size=100>FAQs</font></div>
+	
+		</div>
+	<style>
+		
+
+		body{
+			background-image: url("pop.jpg");
+			background-repeat: no-repeat;
+			background-size: 2000px 2800px;
+    }
+		img{
+			width: 450px;
+			height: 500px;
+		}
+.containe {
+  position: absolute;
+
+  right: 5%;
+  
+
+}
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+}
+.collapsibl {
+  background-image: url("y2.jpg");
+  color: black;
+  cursor: pointer;
+  padding: 13px;
+  width: 61%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 25px;
+ 
+
+}
+
+.activ, .collapsibl:hover {
+  background-colblue.jpgor: #555;
+}
+
+.conten {
+  padding: 0px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+  font-size: 20px;
+  font-family: monospace;
+width: 60%
+ 
+}
+.collapsible1{
+  background-image: url("y1.jpg");
+  background-repeat: no-repeat;
+  background-size: 1500px 100px;
+   color: black;
+  cursor: pointer;
+  padding: 13px;
+  width:61%;
+  border:none;
+  text-align: left;
+  outline:none;
+  font-size: 25px;
+}
+.active1, .collapsible1:hover {
+  background-colblue.jpgor: #555;
+} 
+
+.collapsible2{
+  background-image: url("jk.jpg");
+  color: black;
+  cursor: pointer;
+  padding: 13px;
+  width:61%;
+  border:none;
+  text-align: left;
+  outline:none;
+  font-size: 25px;
+}
+.active2, .collapsible2:hover {
+  background-colblue.jpgor: #555;
+}
+
+
+.collapsible3{
+  background-image: url("mid.png");
+  background-size: 200px 200px;
+  color: black;
+  cursor: pointer;
+  padding: 13px;
+  width:61%;
+  border:none;
+  text-align: left;
+  outline:none;
+  font-size: 25px;
+}
+.active3, .collapsible3:hover {
+  background-colblue.jpgor: #555;
+} 
+
+.collapsible4{
+  background-image: url("last.jpg");
+  color: black;
+  cursor: pointer;
+  padding: 13px;
+  width:61%;
+  border:none;
+  text-align: left;
+  outline:none;
+  font-size: 25px;
+}
+.active4, .collapsible4:hover {
+  background-colblue.jpgor: #555;
+} 
+
+
+.collapsible5{
+  background-image:url("last2.png");
+  color: black;
+  cursor: pointer;
+  padding: 13px;
+  width:61%;
+  border:none;
+  text-align: left;
+  outline:none;
+  font-size: 25px;
+}
+.active5, .collapsible5:hover {
+  background-colblue.jpgor: #555;
+} 
+body{
+  background-image: 
+}
+}
+
+
+	</style>
+	<li>
+<font size ="25">
+    <div class="containe">
+ <button class="collapsibl"> <font face="Comic sans MS"> + What is IETE ?</font></button>
+<div class="conten ">
+ <font face="Comic sans MS"><p>IETE-TSEC is students forum of the Institution of Electronics and Telecommunication Engineers.</p></font>
+</div>
+<button class="collapsible1"> <font face="Comic sans MS">+ How can I join the comittee?</font></button>
+<div class="conten"><font face="Comic sans MS">
+  <p>There will be a memebership drive held with lot of exciting things and fun. You can come to the membership drive and be a member.</p></font>
+</div>
+<button class="collapsible2"><font face="Comic sans MS">+ What activities are conducted by the commitee ?</font></button>
+<div class="conten">
+	<font face="Comic sans MS"><p>The committee  organises various exciting events like ELAN and OSCILLATION which you can see in our website. It gives a very big platform to explore and  learn amazing things like hacking etc</p></font>
+</div>
+<button class="collapsible3"> <font face="Comic sans MS">+ I am not an EXTC student.Can I still join the committee?</font></button>
+<div class="conten"><font face="Comic sans MS"> <p>YES! Anyone irrespective of the field can be a members of the committee.</p></font>
+</div></button>
+<button class="collapsible4"> <font face="Comic sans MS">+ What are the advantages of joining the committee?</font></button>
+<div class="conten"><font face="Comic sans MS"> <p>The advanatges of joining the committee is that you will  get exciting coupons and discounts on fests.</p></font>
+</div></button>
+<button class="collapsible5"> <font face="Comic sans MS">+ What is the goal of the committee?</font></button>
+<div class="conten">
+   <font face="Comic sans MS"><p> To enrich and enlighten the technical aspects of engineering in a fun and practical manner.
+We offer students the chance to learn and cultivate a varied skillset consisting of Management, Marketing, Networking, Design and many more.</p></font>
+</div></button>
+</li>
+
+<script>
+var coll = document.getElementsByClassName("collapsibl");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("activ");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+
+
+var coll = document.getElementsByClassName("collapsible1");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active1");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+
+
+var coll = document.getElementsByClassName("collapsible2");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active2");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+var coll = document.getElementsByClassName("collapsible3");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active3");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+var coll = document.getElementsByClassName("collapsible4");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active4");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+var coll = document.getElementsByClassName("collapsible5");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active5");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+
+
+
+</script>
+</div>
+
+
+</body>
+</html>
